@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap');
+
+@import './butterflies.scss';
+@import './clouds.scss';
+
+$primary-color: #2d96b6;
+$box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5), 0 6px 6px rgba(0, 0, 0, 0.5);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #222;
+  background-color: #fff;
+  font-family: 'EB Garamond', 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 20px;
+}
+
+.dialog {
+  display: block;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: $box-shadow;
+  text-align: center;
+  max-width: 100%;
+  z-index: 10;
+  text-align: center;
+  padding: 30px 40px;
+}
+
+.error {
+  color: red;
+  font-style: italic;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.quote-box {
+  text-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  font-style: italic;
+  font-size: 28px;
+  color: rgb(117, 117, 117);
+  // background:rgba(221, 157, 157, 0.4);
+}
+
+.quote-text {
+  margin: 0;
+  padding: 0.5em 10px 0 0;
+  quotes: "\201C""\201D""\2018""\2019";
+
+  &:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }
+
+  & p {
+    display: inline;
+  }
+}
+
+.quote-by {
+  margin-top: 5px;
+  font-size: 20px;
+
+  &:before {
+    content: '- ';
+  }
+}
+
+.divider-img {
+  display: inline-block;
+  height: 70px;
+  margin-bottom: 0;
+}
+
+.age-dialog {
+  margin-bottom: 20px;
+}
+
+.results-dialog {
+  color: rgb(75, 75, 75);
+  display: none;
+  padding-top: 10px;
+  padding-bottom: 45px;
+
+  &:h1 {
+    margin-bottom: 30px;
+  }
+}
+
+label {
+  font-size: 22px;
+  // text-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  // text-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+input {
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  border-radius: 8px;
+  margin: 10px auto;
+  padding: 4px 8px;
+  border: 1px solid $primary-color;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  font-size: 24px;
+  width: 100px;
+  text-align: center;
+}
+
+.btn {
+  background-color: $primary-color;
+  color: #fff;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  padding: 8px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  height: 40px;
+  width: 100px;
+
+  &:hover {
+    background-color: lighten($primary-color, 8%);
+  }
+}
+
+.background {
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  opacity: .9;
+}
+
+.sky {
+  // background: linear-gradient(rgb(176, 248, 255), rgb(100,211,221));
+  background: linear-gradient(#c0cff3, #9AB2CE);
+  // background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.graveyard {
+  background-image: url(../assets/graveyard-wide.jpg);
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 100vh;
+  left: 0;
+}
+
+.output {
+  color: #555;
+  font-size: 20px;
+  font-style: italic;
+
+}
+
+.output-line-1 {
+  margin-top: 20px;
+  animation: fadeinAnimation 1s ease-in-out forwards;
+}
+
+.output-line-2 {
+  margin-top: 5px;
+  animation: fadeinAnimation 1s ease-in-out forwards;
+}
+
+
+.animate-sky {
+  animation: slideUpSky 2.5s ease forwards;
+}
+
+.animate-graveyard {
+  animation: slideUpGraveyard 2.5s ease forwards;
+}
+
+.shrink {
+  animation: shrinkAnimation .7s forwards;
+  // height: 0;
+  // height: 0;
+}
+
+.fadeout {
+  animation: fadeoutAnimation .4s forwards;
+  // opacity: 0;
+}
+
+.fadein {
+  display: block;
+  animation: fadeinAnimation .8s ease-in-out forwards;
+  // opacity: 0;
+}
+
+@keyframes slideUpSky {
+  0% {top: 0;}
+  100% {top: -100vh;}
+}
+
+@keyframes slideUpGraveyard {
+  0% {top: -100;}
+  100% {top: 0vh;}
+}
+
+@keyframes shrinkAnimation {
+  0% {}
+  100% {
+    height: 0px;
+    padding: 0;
+    font-size: 0;
+    border: none;
+    margin: 0;
+  }
+}
+
+@keyframes fadeoutAnimation {
+  0% {}
+  100% {opacity: 0;}
+}
+
+@keyframes fadeinAnimation {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}

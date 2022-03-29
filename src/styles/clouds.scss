@@ -1,0 +1,43 @@
+.cloud {
+  position: absolute;
+  top: 0;
+  left: 0;
+  // width: 150px;
+  // filter: drop-shadow();
+  // filter: drop-shadow(0 0 .15em #555);
+  filter: drop-shadow(.25rem .25rem .5rem #555);
+  filter: blur(6px);
+  opacity: .7;
+}
+
+.layer1 {
+  z-index: 3;
+  // animation: 15s linear moveRight;
+}
+
+.layer2 {
+  z-index: 4;
+  // animation: 10s linear moveRight;
+}
+
+.layer3 {
+  z-index: 5;
+  // animation: 5s linear moveRight;
+}
+
+@keyframes moveRight {
+  0% {}
+  100% {left: 200vh;}
+}
+
+.hide-cloud {
+  animation: 2.5s ease hideClouds forwards;
+}
+
+@keyframes hideClouds {
+  0% {}
+  100% {
+    opacity: 0;
+    top: -100vh;
+  }
+}

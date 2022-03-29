@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+	<div class="background sky" id="sky"></div>
+	<div class="background graveyard" id="graveyard"></div>
+	<div class="dialog" id="dialog">
+
+		<div class="quote-box">
+			<div class="quote quote-text" id="quote"></div>
+			<div class="quote quote-by" id="quote-by"></div>
+		</div>
+
+		<img class="divider-img" id="divider-img" />
+
+		<form class="age-dialog" id="age-dialog">
+			<label for="age" id="age-label">So, what year were you born?</label>
+			<input type="text" id="age">
+			<div class="error" id="error"></div>
+			<button type="submit" class="btn" id="btn">Submit</button>
+		</form>
+	</div>
+	<div class="dialog results-dialog" id="results-dialog">
+		<h1>You were born in <b><span id="year"></span></b>... That means:</h1>
+	</div>
+</body>
+</html>

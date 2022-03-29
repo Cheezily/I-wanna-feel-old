@@ -1,0 +1,14 @@
+.hidden-loader {
+  display: none;
+}
+
+.butterfly {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  z-index: 9;
+  // filter: drop-shadow(0 2px #222);
+  -webkit-filter: drop-shadow(0 0 5px #222);
+  filter: drop-shadow(0 0 5px #222);
+  // opacity: .75;
+}
