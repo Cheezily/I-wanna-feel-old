@@ -1,35 +1,160 @@
 // Wording: 'The time that has passed from'
 
 const HAPPENINGS = {
-  "2021": ["Thing that happened in 2021"],
-  "2020": ["Thing that happened in 2020"],
-  "2019": ["Thing that happened in 2019"],
-  "2018": ["Thing that happened in 2018"],
-  "2017": ["Thing that happened in 2017"],
-  "2016": ["Thing that happened in 2016"],
-  "2015": ["Thing that happened in 2015"],
-  "2014": ["Thing that happened in 2014"],
-  "2013": ["Thing that happened in 2013"],
-  "2012": ["Thing that happened in 2012"],
-  "2011": ["Thing that happened in 2011"],
-  "2010": ["Thing that happened in 2010"],
-  "2009": ["Thing that happened in 2009"],
-  "2008": ["Thing that happened in 2008"],
-  "2007": ["Thing that happened in 2007"],
-  "2006": ["Thing that happened in 2006"],
-  "2005": ["Thing that happened in 2005"],
-  "2004": ["Thing that happened in 2004"],
-  "2003": ["Thing that happened in 2003"],
-  "2002": ["Thing that happened in 2002"],
-  "2001": ["Thing that happened in 2001"],
-  "2000": ["Thing that happened in 2000"],
-  "1999": ["Thing that happened in 1999"],
-  "1998": ["Thing that happened in 1998"],
-  "1997": ["Thing that happened in 1997"],
-  "1996": ["Thing that happened in 1996"],
-  "1995": ["Thing that happened in 1995"],
-  "1994": ["Thing that happened in 1994"],
-  "1993": ["Thing that happened in 1993"],
+  "2021": [
+    "SpaceX sucessfully testing a Starship prototype",
+    "Kabul falling to the Taliban",
+    "the Tokyo Olympics finally being held"
+  ],
+  "2020": [
+    "the death of Kobe Bryant",
+    "the election of Joe Biden as U.S. President",
+    "the rollout of the COVID-19 vaccines"
+  ],
+  "2019": [
+    "the first appearance of the COVID-19 virus",
+    "the first ever image of a black hole",
+    "the mosque attacks in Christchurch, New Zealand"
+  ],
+  "2018": [
+    "the wedding of Prince Harry and Meghan Markle",
+    "U.S. President Trump meeting with Kim Jong Un in North Korea",
+    "Sears filing for bankruptcy",
+    "Toys 'R' Us filing for bankruptcy",
+    "Bill Cosby heading to prison"
+  ],
+  "2017": [
+    "Donald Trump being sworn in as U.S. President",
+    "the Women's march on Washington",
+    "the Harvey Weinstein allegations and the #MeToo movement"
+  ],
+  "2016": [
+    "Britain voting to leave the European Union",
+    "Donald Trump being elected U.S. President",
+    "the outbreak of the Zika virus in Brazil",
+    "the Pulse nightclub shooting in Orlando"
+  ],
+  "2015": [
+    "Volkswagen is caught cheating on emissions output",
+    "the Charlie Hebdo attack in Paris"
+  ],
+  "2014": [
+    "the disappearance of Malaysian Air Flight 370",
+    "pro-democracy protests erupting in Hong Kong",
+    "Russia annexes Crimea from Ukraine"
+  ],
+  "2013": [
+    "George Zimmerman being acquitted in the shooting of Trayvon Martin",
+    "the U.S. Supreme Court legalizing gay marriage",
+    "the Boston Marathon bombing"
+  ],
+  "2012": [
+    "the Summer Olympics in London",
+    "Xi Jinping is made president of China",
+    "U.S. President Barack Obama being elected to a second term"
+  ],
+  "2011": [
+    "the wedding of Prince William and Catherine Middleton",
+    "the death of Apple co-founder Steve Jobs",
+    "the death of North Korea leader Kim Jong-il",
+  ],
+  "2010": [
+    "the Winter Olympics in Vancouver",
+    "the 7.0-magnitude earthquake in Haiti",
+    "the release of the first iPad",
+    "the formation of British-Irish boyband One Direction"
+  ],
+  "2009": [
+    "Minecraft receiving its first update by Mojang Studios",
+    "the crash of Air France Flight 447",
+    "the H1N1 swine flu outbreak"
+  ],
+  "2008": [
+    "Cuban leader Fidel Castro stepping down",
+    "the Summer Olympics being held in Beijing",
+    "the election of Barack Obama as U.S. President",
+    "the Global Financial Crisis"
+  ],
+  "2007": [
+    "the relase of the Pixar film Ratatouille",
+    "the debut of the tv show Big Bang Theory",
+    "the release of Windows Vista",
+    "the release of the first iPhone",
+    "the start of the subprime mortgage crisis"
+  ],
+  "2006": [
+    "the release of the Nintendo Wii",
+    "the first flight of the Lockheed Martin F-35",
+    "the release of the Blu-ray disc format",
+    "the death of Steve Irwin off the coast of Australia"
+  ],
+  "2005": [
+    "the debut of Avatar: The Last Airbender on Nickelodeon",
+    "the debut of the American version of The Office on NBC",
+    "the release of Star Wars: Episode III"
+  ],
+  "2004": [
+    "U.S. President George W. Bush winning reelection",
+    "the revelation of the Abu Ghraib prisoner abuse",
+    "the airing of the final episode of Friends",
+    "the death of U.S. President Ronald Reagan",
+  ],
+  "2003": [
+    "the start of the U.S.-led Iraq War",
+    "Martha Stewart being indicted for insider trading",
+    "the release of the first Pirates of the Caribbean movie",
+    "the launch of the social netowrk Myspace",
+    "the destruction of the Space Shuttle Columbia"
+  ],
+  "2002": [
+    "Kelly Clarkson winning the first American Idol",
+    "the release of the Disney film Lilo & Stitch"
+  ],
+  "2001": [
+    "George W. Bush being sworn in as U.S. President",
+    "the death of NASCAR legend Dale Earnhardt",
+    "the 9/11 attacks on the United States",
+  ],
+  "2000": [
+    "George W. Bush is elected as U.S. President",
+    "the bursting of the Dot-Com Bubble"
+  ],
+  "1999": [
+    "the debut of SpongeBob SquarePants",
+    "the Y2K panic",
+    "the Columbine High School massacre",
+    "the creation of the Euro"
+  ],
+  "1998": [
+    "the founding of Google",
+    "the release of the Disney film Mulan",
+    "the release of Windows 98",
+    "the Monica Lewinsky Scandal"
+  ],
+  "1997": [
+    "the death of Princess Diana",
+    "the mass-suicide of the Heaven's Gate cult",
+    "the first Harry Potter book is published"
+  ],
+  "1996": [
+    "the divorce of Prince Charles and Diana",
+    "the release of the Nintendo 64",
+    "U.S. President Bill Clinton wins reelection"
+  ],
+  "1995": [
+    "the launch of the History Channel",
+    "the Oklahoma City bombing",
+    "the release of Windows 95"
+  ],
+  "1994": [
+    "the election of Nelson Mandella in South Africa",
+    "OJ Simpson flees from the police in a White Ford Bronco",
+    "the first episode of Friends airs on NBC",
+    "the release of the first Playstation"
+  ],
+  "1993": [
+    "the U.S. government siege in Waco, TX"
+  ],
   "1992": ["Thing that happened in 1992"],
   "1991": ["Thing that happened in 1991"],
   "1990": ["Thing that happened in 1990"],
@@ -53,7 +178,7 @@ const HAPPENINGS = {
     
   ],
   "1984": [
-    "Thing that happened in 1984",
+    "the Winter Olympics in Sarajevo, Yugoslavia",
     ""
   ],
   "1983": [
@@ -227,6 +352,72 @@ const HAPPENINGS = {
   "1871": [
     "the first Major League Baseball game is played",
     "the birth of Winston Churchill"
+  ],  
+  "1870": [
+    "John D. Rockefeller founding Standard Oil",
+    "the Franco-Prussian War",
+    "the creation of the Japanese yen"
+  ],
+  "1869": [
+    "the creation of the periodic table",
+    "Ulysses S. Grant being sworn in as U.S. President",
+    "the first American football game between Rutgers and Priceton"
+  ],
+  "1868": [
+    "Wyoming becoming a U.S. territory",
+    "the ratification of the Fourteenth Amendment in the U.S.",
+    "the U.K. ending the act of public hanging"
+  ],
+  "1867": [
+    "Nebraska becoming the 37th U.S. state",
+    "the end of the U.K. transporting prisoners to Australia",
+    "the first Canadian federal election"
+  ],
+  "1866": [
+    "the first meeting of the Canadian Parliament",
+    "Tennessee becoming the first state to rejoin the Union",
+  ],
+  "1865": [
+    "the assassination of Abraham Lincoln",
+    "the end of the American Civil War",
+  ],
+  "1864": [
+    "the founding of Heineken brewery in the Netherlands",
+    "General William T. Sherman's assault on Atlanta.",
+    "Nevada becomming a U.S. state"
+  ],
+  "1863": [
+    "Abraham Lincoln signing the Emancipation Proclamation",
+    "Arizona becoming a U.S. territory",
+    "the organiztion of the Idaho Territory in the U.S."
+  ],
+  "1862": [
+    "West Virginia becoming part of the Union",
+    "the creation of the Gatling gun",
+  ],
+  "1861": [
+    "Colorado being organized as a U.S. territory",
+    "Czar Alexander II of Russia ends serfdom",
+    "Abraham Lincoln being sworn in as U.S. President"
+  ],
+  "1860": [
+    "the Pony Express begins its first run",
+    "Abraham Lincoln being selected as the Republican Party candidate",
+  ],
+  "1859": [
+    "Big Ben, the Great Clock at the Palace of Westminster, is started",
+    "the playing of the first game of baseball",
+  ],
+  "1858": [
+    "Minnesota being admitted a U.S. state",
+    "the first transatlantic telegraph message",
+  ],
+  "1857": [
+    "the birth of the 12th Dali Lama",
+  ],
+  "1857": [
+    "the incorporation of Dallas, Texas",
+    "the birth of Booker T. Washington"
   ],
 }
 
