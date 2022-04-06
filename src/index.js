@@ -132,7 +132,7 @@ BTN.addEventListener('click', function (e) {
       let element1 = document.createElement('h1')
       element1.classList.add('output')
       element1.classList.add('closing-line')
-      element1.innerText = "Don't let time pass you by. You're older than you think you are."
+      element1.innerText = "Don't let time pass you by. History does not wait."
 
       results_dialog.appendChild(element1)
 
