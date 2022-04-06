@@ -214,7 +214,7 @@ const HAPPENINGS = {
   "1983": [
     "the launch of the first mobile phone by Motorola",
     "the opening of the first HIV/AIDS hospital in the U.S.",
-    "Sally Ride becomming the first American woman in space",
+    "Sally Ride becoming the first American woman in space",
     "the Soviet downing of Korean Air Lines Flight 007"
   ],
   "1982": [
@@ -354,7 +354,7 @@ const HAPPENINGS = {
     "the introduction of the hula hoop"
   ],
   "1957": [
-    "the USSR launches Sputnik 1",
+    "the USSR launching of Sputnik 1",
     "the final episode of I Love Lucy"
   ],
   "1956": [
@@ -626,27 +626,72 @@ const HAPPENINGS = {
     "the incorporation of U.S. Steel"
   ],
   "1900": [
-    "the first bus service launches in New York City",
+    "the first bus service launch in New York City",
     "the U.S. currency being put on the gold standard",
     "Hawaii becoming a U.S. territory"
   ],
-  "1899": ["Thing that happened in 1899"],
-  "1898": ["Thing that happened in 1898"],
-  "1897": ["Thing that happened in 1897"],
-  "1896": ["Thing that happened in 1896"],
-  "1895": ["Thing that happened in 1895"],
-  "1894": ["Thing that happened in 1894"],
-  "1893": ["Thing that happened in 1893"],
-  "1892": ["Thing that happened in 1892"],
-  "1891": ["Thing that happened in 1891"],
-  "1890": ["Thing that happened in 1890"],
-  "1889": ["Thing that happened in 1889"],
-  "1888": ["Thing that happened in 1888"],
-  "1887": ["Thing that happened in 1887"],
-  "1886": ["Thing that happened in 1886"],
-  "1885": ["Thing that happened in 1885"],
+  "1899": [
+    "the start of the Philippine-American War",
+    "the first radio message between the U.K. and France"
+  ],
+  "1898": [
+    "the Spanish-American War",
+    "New York City being divided in to its 5 boroughs"
+  ],
+  "1897": [
+    "the Diamond Jubilee of Queen Victoria",
+    "the first Boston Marathon",
+  ],
+  "1896": [
+    "Utah becoming a U.S. state",
+    "the first x-ray machine"
+  ],
+  "1895": [
+    "the creation of the first Diesel engine",
+    "the birth of Babe Ruth"
+  ],
+  "1894": [
+    "the first production car being produced"
+  ],
+  "1893": [
+    "Thomas Edison creating the first movie studio"
+  ],
+  "1892": [
+    "Ellis Island beginning to accept immigrants in New York",
+    "the creation of the General Electric Company"
+  ],
+  "1891": [
+    "the invention of the game of basketball",
+    "the patent of the first escalator"
+  ],
+  "1890": [
+    "Idaho becoming a U.S. state",
+    "Wyoming becoming a U.S. state",
+    "the organization of the Oklahoma Territory"
+  ],
+  "1889": [
+    "the founding of the Coca-Cola Company",
+    "Benjamin Harrison becoming U.S. President"
+  ],
+  "1888": [
+    "the founding of the Eastman Kodak Company",
+    "Benjamin Harrison is elected U.S. President"
+  ],
+  "1887": [
+    "Anne Sullivan begining to teach Helen Keller",
+    "the death of Doc Holliday"
+  ],
+  "1886": [
+    "the creation of the first automobile",
+    "the founding of Vancouver, British Columbia"
+  ],
+  "1885": [
+    "the invention of the roller coaster",
+    "the incorporation of AT&T"
+  ],
   "1884": [
     "Alaska becoming a U.S. Territory",
+    "Grover Cleveland is elected U.S. President"
   ],
   "1883": [
     "the grand opening of the Brooklyn Bridge",
@@ -753,7 +798,7 @@ const HAPPENINGS = {
     "Abraham Lincoln being selected as the Republican Party candidate",
   ],
   "1859": [
-    "Big Ben, the Great Clock at the Palace of Westminster, is started",
+    "Big Ben, at the Palace of Westminster, is started",
     "the playing of the first game of baseball",
   ],
   "1858": [
@@ -761,11 +806,69 @@ const HAPPENINGS = {
     "the first transatlantic telegraph message",
   ],
   "1857": [
-    "the birth of the 12th Dali Lama",
-  ],
-  "1857": [
+    "the first sound recordings are made"
+  ],  
+  "1856": [
     "the incorporation of Dallas, Texas",
-    "the birth of Booker T. Washington"
+    "the birth of Booker T. Washington",
+    "the end of the Crimean War"
+  ],  
+  "1855": [
+    "the end of the California Gold Rush",
+    "Alexander II ascending the Russian throne"
+  ],  
+  "1854": [
+    "the founding of the Republican Party in the U.S.",
+    "the Charge of the Light Brigade in the Crimean War"
+  ],
+  "1853": [
+    "the opening of the world's first public aquarium",
+  ],
+  "1852": [
+    "the creation of the first steam fire engine",
+    "the publication of Uncle Tom's Cabin"
+  ],
+  "1851": [
+    "the founding of the New York Times",
+  ],
+  "1850": [
+    "California becoming a U.S. state"
+  ],
+  "1849": [
+    "Hungary splitting from Austria",
+    "the invention of the Safety Pin"
+  ],
+  "1848": [
+    "the start of the California Gold Rush",
+    "Wisconsin becomes a U.S. state"
+  ],
+  "1847": [
+    "the U.S. issuing the first postage stamps"
+  ],
+  "1846": [
+    "the start of the Mexican-American War",
+    "the annexation of the Republic of Texas"
+  ],
+  "1845": [
+    "the start of the Mexican-American War",
+    "the annexation of the Republic of Texas",
+    "Florida becoming a U.S. state"
+  ],
+  "1844": [
+    "the first Morse telegram",
+    "the death of Wolfgang Mozart"
+  ],
+  "1843": [
+    "the first wagon train of the Oregon Trail"
+  ],
+  "1842": [
+    "Queen Victoria first travelling by train",
+  ],
+  "1841": [
+    "Britain's occupation of Hong Kong"
+  ],
+  "1840": [
+    "Britain's occupation of Hong Kong"
   ],
 }
 

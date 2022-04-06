@@ -42,7 +42,7 @@ BTN.addEventListener('click', function (e) {
     return
   }
 
-  if(validated && birthYear < 1920) {
+  if(validated && birthYear < (new Date().getFullYear() - 90)) {
     validated = false
     ERROR.innerText = "You're " + (new Date().getFullYear() - birthYear) 
       + " years old? How are you using a computer? "
@@ -55,7 +55,7 @@ BTN.addEventListener('click', function (e) {
     return
   }
 
-  if(validated && birthYear > 2015) {
+  if(validated && birthYear > (new Date().getFullYear() - 7)) {
     validated = false
     ERROR.innerText = "You're " + (new Date().getFullYear() - birthYear) 
       + "!  Come back after your first existential crisis."
@@ -89,13 +89,12 @@ BTN.addEventListener('click', function (e) {
     // Get and display the events
     let delay = 8000
     let happenings = getHappenings(birthYear)
+    let results_dialog = document.getElementById('results-dialog')
     for(let i = 0; i < happenings.length; i++) {
       setTimeout(function () {
         console.log(happenings[i])
         console.log(happenings[i][0])
         console.log(happenings[i][1])
-
-        let results_dialog = document.getElementById('results-dialog')
 
         let line1 = "The time that has passed from " + happenings[i][0]['happening'] 
           + " in " + String(happenings[i][0]['year']) + " to now" 
@@ -126,6 +125,18 @@ BTN.addEventListener('click', function (e) {
 
       }, fadeInTimout + (i * delay) + 500)
     }
+
+    console.log(fadeInTimout + (happenings.length * delay) + 2500)
+
+    setTimeout(function () {
+      let element1 = document.createElement('h1')
+      element1.classList.add('output')
+      element1.classList.add('closing-line')
+      element1.innerText = "Don't let time pass you by. You're older than you think you are."
+
+      results_dialog.appendChild(element1)
+
+    }, fadeInTimout + (happenings.length * delay) + 500)
   }
 
 })
