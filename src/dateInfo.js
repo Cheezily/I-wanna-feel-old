@@ -116,7 +116,7 @@ const HAPPENINGS = {
     "the 9/11 attacks on the United States",
   ],
   "2000": [
-    "George W. Bush is elected as U.S. President",
+    "George W. Bush being elected as U.S. President",
     "the bursting of the Dot-Com Bubble"
   ],
   "1999": [
@@ -338,7 +338,7 @@ const HAPPENINGS = {
     "John F. Kennedy becoming U.S. President"
   ],
   "1960": [
-    "John F. Kennedy is elected U.S. President",
+    "John F. Kennedy being elected U.S. President",
     "the Soviet Union shootdown of a U2 spy plane",
     "the U.S. announces soldiers being sent to Vietnam",
     "the first televised U.S. Presidential Debate"
@@ -675,7 +675,7 @@ const HAPPENINGS = {
   ],
   "1888": [
     "the founding of the Eastman Kodak Company",
-    "Benjamin Harrison is elected U.S. President"
+    "Benjamin Harrison being elected U.S. President"
   ],
   "1887": [
     "Anne Sullivan begining to teach Helen Keller",
@@ -691,7 +691,7 @@ const HAPPENINGS = {
   ],
   "1884": [
     "Alaska becoming a U.S. Territory",
-    "Grover Cleveland is elected U.S. President"
+    "Grover Cleveland being elected U.S. President"
   ],
   "1883": [
     "the grand opening of the Brooklyn Bridge",
@@ -900,7 +900,7 @@ function getHappenings(birthYear) {
       }
     ])
 
-    yearSkip += 3
+    yearSkip += Math.floor(Math.random() * 4) + 1
   }
 
   output.push([

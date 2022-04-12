@@ -42,7 +42,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Wanna Feel Old?',
       filename: 'index.html',
-      template: path.resolve(__dirname, 'src/template.html')
+      template: path.resolve(__dirname, 'src/template.html'),
+      favicon: './src/assets/butterflies/butterfly_orange.png'
     })
   ]
 }

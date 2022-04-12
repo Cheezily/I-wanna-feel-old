@@ -106,6 +106,9 @@ BTN.addEventListener('click', function (e) {
         element1.classList.add('output-line-1')
         element1.innerText = line1
 
+        let divider_element = document.createElement('hr')
+        results_dialog.append(divider_element)
+
         results_dialog.appendChild(element1)
 
         let line2 = "...is the same amount of time as from your birth to " 
@@ -123,10 +126,12 @@ BTN.addEventListener('click', function (e) {
           results_dialog.append(element2)
         }, delay / 2)
 
+        setTimeout(function () {
+
+        }, (delay / 2) + 500)
+
       }, fadeInTimout + (i * delay) + 500)
     }
-
-    console.log(fadeInTimout + (happenings.length * delay) + 2500)
 
     setTimeout(function () {
       let element1 = document.createElement('h1')
